@@ -155,12 +155,13 @@ Focus on actionable suggestions that the author could realistically implement.
 
 ---
 
-## 4-point Repository Checklist
+## Repository Checklist
 
 Verify your repository contains:
 
 [ ] Jupyter Notebook with proper name, numbered sections and reflections.  
-[ ] README.md (see above)
+[ ] README.md (overview)
+[ ] PROJECT_SUMMARY.md (with modeling details - see PROJECT_SUMMARY_TEMPLATE.md)
 [ ] Dataset, stored in a data folder.  
 [ ] Peer Review (peer_review.md).  
 
