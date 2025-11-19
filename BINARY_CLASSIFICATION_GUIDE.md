@@ -69,6 +69,26 @@ Key questions:
 - Who determines the acceptable tradeoff (stakeholders, domain experts, regulations):
 - Why:
 
+### Default Threshold Behavior (Important)
+
+Most binary classification models in scikit-learn follow the same pattern:
+
+- The model produces a score or probability for the positive class.
+- The `.predict_proba(X)` method returns two columns:
+  - column 0: P(class 0 | X)
+  - column 1: P(class 1 | X)
+- The `.predict(X)` method applies an **implicit threshold of 0.5**, meaning:
+  - if P(class 1 | X) >= 0.5 then: predict class 1
+  - else:  predict class 0
+
+This threshold of 0.5 is only a **default**. You can replace it by:
+- creating a threshold variable, e.g. `threshold = 0.5`
+- getting probabilities with `.predict_proba(X)`, e.g. `proba = nn_model3.predict_proba(np.c_[xx.ravel(), yy.ravel()])[:, 1]`
+- applying your own threshold: `Z = (proba >= threshold).astype(int)`.
+- continuing with this Z (for example, `plt.contourf(xx, yy, Z, cmap=cmap_background, alpha=0.7)`)
+- where Z is the prediction grid: a 2-D array of class labels (0 or 1) computed for every point in the meshgrid so the decision surface can be plotted.
+
+Discuss your choice of threshold in your project summary. 
 
 ## 6. Review the Features
 
