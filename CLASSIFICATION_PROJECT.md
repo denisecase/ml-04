@@ -159,10 +159,10 @@ Focus on actionable suggestions that the author could realistically implement.
 
 Verify your repository contains:
 
-[ ] Jupyter Notebook with proper name, numbered sections and reflections.  
-[ ] README.md (overview)
-[ ] PROJECT_SUMMARY.md (with modeling details - see PROJECT_SUMMARY_TEMPLATE.md)
-[ ] Dataset, stored in a data folder.  
-[ ] Peer Review (peer_review.md).  
+- [ ] Jupyter Notebook with proper name, numbered sections and reflections
+- [ ] README.md (overview)
+- [ ] PROJECT_SUMMARY.md (with modeling details - see PROJECT_SUMMARY_TEMPLATE.md)
+- [ ] Dataset, stored in a data folder
+- [ ] Peer Review (peer_review.md)
 
----
+
